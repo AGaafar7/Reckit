@@ -1,16 +1,66 @@
-# reckit
+# 🧭 Reckit - Trip Management Dashboard
 
-A new Flutter project.
+**Reckit** is a responsive Flutter web application designed to manage, visualize, and track travel itineraries and tasks. It features a dark, modern UI inspired by real-world dashboard layouts, supports mobile and desktop views, and dynamically loads content from a JSON source.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🌙 Beautiful dark-themed UI
+- 📱 Fully responsive layout (mobile & web)
+- 📦 JSON-powered dynamic trip listing
+- 📅 Trip status, dates, tasks, and participants
+- 🔧 Filter, sort, and add item buttons
+- 🧑‍🤝‍🧑 Profile avatars and task counters
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Live Demo
+
+🌐 [View on GitHub Pages](https://agaafar7.github.io/Reckit/)
+
+---
+
+## 🛠️ Tech Stack
+
+- [Flutter](https://flutter.dev) (Web)
+- Dart
+- Responsive layout with `MediaQuery`
+- Local JSON asset loading
+- GitHub Pages for deployment
+
+---
+
+## 📂 Project Structure
+
+reckit/
+├── assets/
+│ ├── data/trips_mock.json # JSON data for trips
+│ └── icons/filter.png # Custom icons
+├── lib/
+│ ├── main.dart # App entry point
+│ ├── screens/home_screen.dart # Main dashboard UI
+│ └── models/trip.dart # Trip model
+├── build/web/ # Generated web build (after build)
+├── README.md
+└── pubspec.yaml
+
+---
+
+## 🧪 Run Locally
+
+### Requirements
+
+- Flutter SDK (3.10+)
+- Dart
+
+### Setup
+
+```bash
+git clone https://github.com/AGaafar7/Reckit.git
+cd Reckit
+flutter pub get
+flutter run -d chrome
+
+flutter build web
+
